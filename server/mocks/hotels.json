@@ -1,0 +1,143 @@
+[
+    {
+      "name": "The Trans Luxury Hotel",
+      "location": "Bandung",
+      "price": 2000000,
+      "address": "Jl. Gatot Subroto No. 289",
+      "imageUrl": "https://images.trvl-media.com/lodging/6000000/5130000/5126900/5126834/8e6970c6.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+    },
+    {
+      "name": "Padma Hotel Bandung",
+      "location": "Bandung",
+      "price": 1800000,
+      "address": "Jl. Ranca Bentang No. 56-58, Ciumbuleuit",
+      "imageUrl": "https://padmahotelbandung.com/images/content/deluxe-room.jpg"
+    },
+    {
+      "name": "Hilton Bandung",
+      "location": "Bandung",
+      "price": 1500000,
+      "address": "Jl. HOS Tjokroaminoto No. 41-43",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7M8e8t4JL_LC_Nfj3AlHbDIteq68yQkDXVuASoFkVw&s"
+    },
+    {
+      "name": "Crowne Plaza Bandung",
+      "location": "Bandung",
+      "price": 1400000,
+      "address": "Jl. Lembong No. 19",
+      "imageUrl": "https://cdn-5db27433f911da130c7ce697.closte.com/wp-content/uploads/2019/11/Club-King-Crowne-Plaza-Bandung-1400x800.jpg"
+    },
+    {
+      "name": "Ibis Bandung Trans Studio",
+      "location": "Bandung",
+      "price": 600000,
+      "address": "Jl. Gatot Subroto No. 289",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeIZwZCakjYoGlkYbLgEFkW5hC0XgA3BMz6LKmEm9MpQ&s"
+    },
+    {
+      "name": "Hotel Tugu Malang",
+      "location": "Malang",
+      "price": 1900000,
+      "address": "Jl. Tugu No. 3",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/218993693.jpg?k=ffd224eb8fe1c5671b07a6b111e80552187c624928517a1e053def15e2dc8c00&o=&hp=1"
+    },
+    {
+      "name": "HARRIS Hotel & Conventions Malang",
+      "location": "Malang",
+      "price": 1200000,
+      "address": "Jl. A. Yani Utara Riverside Block C-1",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWF2kZ-j5eqbl5virVulKALHlPMxwmQELzx2cTKpw-3g&s"
+    },
+    {
+      "name": "Hotel Santika Premiere Malang",
+      "location": "Malang",
+      "price": 1100000,
+      "address": "Jl. Letjen S. Parman No. 87-89",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHrPYM00or1ezjRXcnDwYfyNMqngPNU2mcpayJy7gFQ&s"
+    },
+    {
+      "name": "Ibis Styles Malang",
+      "location": "Malang",
+      "price": 700000,
+      "address": "Jl. S. Parman No. 45",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Y1P17J6kmXMtgUC-xHhdMdI9DFiVaJ4pFdvdiIci3Q&s"
+    },
+    {
+      "name": "Swiss-Belinn Malang",
+      "location": "Malang",
+      "price": 800000,
+      "address": "Jl. Veteran No. 8A",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaAFZN8vO22VPvAijybRM3L31g9FeCHdpFOlcogW9mWA&s"
+    },
+    {
+      "name": "Hotel Majapahit Surabaya",
+      "location": "Surabaya",
+      "price": 1700000,
+      "address": "Jl. Tunjungan No. 65",
+      "imageUrl": "https://www.ahstatic.com/photos/b066_rokgd_00_p_1024x768.jpg"
+    },
+    {
+      "name": "Shangri-La Hotel Surabaya",
+      "location": "Surabaya",
+      "price": 1800000,
+      "address": "Jl. Mayjen Sungkono No. 120",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9yOp09cJYdl37Zxj08FhLBfN9fiNQRzGBC78QQQwrcw&s"
+    },
+    {
+      "name": "JW Marriott Hotel Surabaya",
+      "location": "Surabaya",
+      "price": 1600000,
+      "address": "Jl. Embong Malang No. 85-89",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/453342562.jpg?k=72905cae4a6b58e574ee506196019171075d00d6172b418050f48ace01316166&o=&hp=1"
+    },
+    {
+      "name": "Hotel Bumi Surabaya",
+      "location": "Surabaya",
+      "price": 1500000,
+      "address": "Jl. Jend. Basuki Rahmat No. 106-128",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/43665149.jpg?k=4ea1282e8fb2799eba8f3fe6441fd1be695261ac0052e88eeac43ff9eb3b5905&o=&hp=1"
+    },
+    {
+      "name": "Mercure Surabaya",
+      "location": "Surabaya",
+      "price": 1200000,
+      "address": "Jl. Raya Darmo No. 68-78",
+      "imageUrl": "https://pix10.agoda.net/hotelImages/781/78163/78163_17101916300058049252.jpg?ca=13&ce=1&s=414x232"
+    },
+    {
+      "name": "Hotel Indonesia Kempinski Jakarta",
+      "location": "Jakarta",
+      "price": 2500000,
+      "address": "Jl. MH Thamrin No. 1",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/543685063.jpg?k=7a8422fef9f9f8733ae757cd91b75dd8fe91451c462aa2bac97b9af43349663d&o=&hp=1"
+    },
+    {
+      "name": "The Ritz-Carlton Jakarta",
+      "location": "Jakarta",
+      "price": 2400000,
+      "address": "Jl. DR. Ide Anak Agung Gde Agung Kav.E.1.1 No.1",
+      "imageUrl": "https://pix10.agoda.net/hotelImages/65540/-1/540475b71b5989de0139a91ed7f63b13.jpg?ce=0&s=414x232"
+    },
+    {
+      "name": "Grand Hyatt Jakarta",
+      "location": "Jakarta",
+      "price": 2300000,
+      "address": "Jl. MH Thamrin Kav. 28-30",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/494057311.jpg?k=4b4078d340bb5565c8a146d1727aa9edfea8b39ecbd0b6c16e3e02e4973a530a&o=&hp=1"
+    },
+    {
+      "name": "Mandarin Oriental Jakarta",
+      "location": "Jakarta",
+      "price": 2200000,
+      "address": "Jl. MH Thamrin No. 81",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8h_9GYPGDLCFRXpY-b6QKdfF7_I5j0nH6ffDNsaJX-w&s"
+    },
+    {
+      "name": "Pullman Jakarta Indonesia",
+      "location": "Jakarta",
+      "price": 2000000,
+      "address": "Jl. MH Thamrin No. 59",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/252160411.jpg?k=96572db3fac7e322ec472825c703dd391d7f48756b93bf52872aa8e2fd82ef23&o=&hp=1"
+    }
+  ]
+  

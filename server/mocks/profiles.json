@@ -1,0 +1,17 @@
+
+[
+    {
+        "name" : "ery",
+        "phoneNumber" : "089888776655",
+        "gender" : "male",
+        "imageUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGK91q8913hBkYw3v8pU4hb6Km9OTIMKxtleUGyhlgGw&s",
+        "userId" : 1
+    },
+    {
+        "name" : "user",
+        "phoneNumber" : "087800992211",
+        "gender" : "male",
+        "imageUrl" : "https://static.republika.co.id/uploads/images/inpicture_slide/ozzy-osbourne-_160419092752-416.jpg",
+        "userId" : 2
+    }
+]
