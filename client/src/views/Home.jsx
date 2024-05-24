@@ -41,7 +41,7 @@ export default function HomePage() {
           <img src={gearLoad} />
         </div>
       ) : (
-        <main className="grid grid-cols-5 p-4 gap-3">
+        <main className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 p-4 gap-3">
           {hotels.map((hotel) => {
             return <Card key={hotel.id} hotel={hotel} />;
           })}

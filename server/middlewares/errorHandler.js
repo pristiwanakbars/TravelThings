@@ -1,11 +1,16 @@
 const errorHandler = (error, req, res, next) => {
-  console.log(error);
+  console.log(error, "<<<<erorrrrrr");
   let status = 500;
   let message = "Internal Server Error";
 
   if (error.name === "SequelizeValidationError") {
     status = 400;
     message = error.errors[0].message;
+  }
+
+  if (error.name === "duplicate") {
+    status = 400;
+    message = error.message;
   }
 
   if (error.name === "SequelizeUniqueConstraintError") {

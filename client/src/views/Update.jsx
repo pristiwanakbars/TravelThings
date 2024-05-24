@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Swal from "sweetalert2";
+import { toast } from "react-toastify";
+import Profile from "../components/Profile";
 
 export default function Edit({ url }) {
   const [profile, setProfile] = useState("");
@@ -10,40 +11,45 @@ export default function Edit({ url }) {
   const [gender, setGender] = useState("");
 
   const { id } = useParams();
+  const navigate = useNavigate();
 
   async function fetchData() {
     try {
       const { data } = await axios.get(`${url}/profile/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.access_token}` },
       });
+      console.log(data);
 
-      setProfile(data);
+      setName(data.name);
+      setGender(data.gender);
+      setPhoneNumber(data.phoneNumber);
     } catch (error) {
-      console.log(error);
-      Swal.fire({
-        icon: "error",
-        title: error.response.data.message,
+      toast.error(error.response.data.error, {
+        position: "bottom-right",
       });
+
+      if (error.response.data.statusCode === 500) {
+        localStorage.removeItem("access_token");
+        navigate("/login");
+      }
     }
   }
   useEffect(() => {
     fetchData();
   }, []);
 
-  async function handleEdit(e, name, gender, phoneNumber) {
+  async function handleEdit(e) {
     e.preventDefault();
     try {
       const edited = { name, gender, phoneNumber };
+      console.log(edited);
       const { data } = await axios.put(`${url}/update/profile/${id}`, edited, {
         headers: { Authorization: `Bearer ${localStorage.access_token}` },
       });
-      console.log(data, "<<<<dataaaaa");
-      // setProfile(data.updatedProfile);
+      navigate("/profile");
     } catch (error) {
-      console.log(error);
-      Swal.fire({
-        icon: "error",
-        title: error.response.data.message,
+      toast.error(error.response.data.error, {
+        position: "bottom-right",
       });
     }
   }
@@ -55,10 +61,8 @@ export default function Edit({ url }) {
             Update Myprofile
           </h1>
           <form className="space-y-4" onSubmit={handleEdit}>
-            <div className="card-body">
-              {/* <img src={profile.logo} alt="" className="w-[100px] h-[100px]" />
-              <h2 className="card-title">{profile.symbol}</h2> */}
-            </div>
+            <div className="card-body"></div>
+
             <div>
               <label className="label">
                 <span className="text-base label-text">name</span>
@@ -68,7 +72,7 @@ export default function Edit({ url }) {
                 type="text"
                 placeholder="name"
                 className="w-full input input-bordered"
-                value={name || ""}
+                value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
@@ -81,6 +85,7 @@ export default function Edit({ url }) {
                 type="text"
                 placeholder="phoneNumber"
                 className="w-full input input-bordered"
+                value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
               />
             </div>
@@ -93,6 +98,7 @@ export default function Edit({ url }) {
                 type="text"
                 placeholder="gender"
                 className="w-full input input-bordered"
+                value={gender}
                 onChange={(e) => setGender(e.target.value)}
               />
             </div>

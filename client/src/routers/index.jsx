@@ -5,6 +5,8 @@ import HomePage from "../views/Home";
 import Register from "../views/Register";
 import Profile from "../views/Profile";
 import Edit from "../views/Update";
+import MyHotel from "../views/MyHotel";
+import UpdateImage from "../views/UpdateImage";
 
 const url = "http://localhost:3000";
 
@@ -49,8 +51,16 @@ const router = createBrowserRouter([
         element: <Profile url={url} />,
       },
       {
+        path: "/myHotel",
+        element: <MyHotel url={url} />,
+      },
+      {
         path: "/update/profile/:id",
         element: <Edit url={url} />,
+      },
+      {
+        path: "/upload/:id",
+        element: <UpdateImage url={url} />,
       },
     ],
   },

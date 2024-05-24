@@ -153,6 +153,13 @@ class userController {
         hooks: false,
       });
 
+      if (created) {
+        await Profile.create({
+          name: payload.name,
+          userId: user.id,
+        });
+      }
+
       const access_token = signToken({
         email: user.email,
       });

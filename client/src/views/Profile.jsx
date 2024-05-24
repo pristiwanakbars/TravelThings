@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import MyCard from "../components/MyHotelCard";
+import ProfileCard from "../components/Profile";
 
 export default function Profile({ url }) {
   const [profile, setProfile] = useState([]);
@@ -13,7 +13,6 @@ export default function Profile({ url }) {
         },
       });
       setProfile(data);
-      console.log(data);
     } catch (error) {
       console.log(error);
     }
@@ -27,7 +26,7 @@ export default function Profile({ url }) {
     <>
       <div>
         {profile.map((profile) => {
-          return <MyCard key={profile.id} profile={profile} />;
+          return <ProfileCard key={profile.id} profile={profile} />;
         })}
       </div>
     </>

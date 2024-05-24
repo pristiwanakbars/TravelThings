@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export default function LoginPage({ url }) {
   const [email, setEmail] = useState("");
@@ -16,6 +17,7 @@ export default function LoginPage({ url }) {
       const { data } = await axios.post(`${url}/login`, addedData);
       console.log(data);
       localStorage.setItem("access_token", data.access_token);
+      toast.success("Successfully login", { position: "bottom-right" });
       navigate("/");
     } catch (error) {
       console.log(error);
@@ -37,6 +39,7 @@ export default function LoginPage({ url }) {
       });
 
       localStorage.setItem("access_token", data.access_token);
+      toast.success("Successfully login", { position: "bottom-right" });
       navigate("/");
     } catch (error) {
       console.log(error);

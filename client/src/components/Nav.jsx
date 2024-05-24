@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export default function Nav() {
   const navigate = useNavigate();
@@ -6,6 +7,7 @@ export default function Nav() {
   function handleLogout() {
     localStorage.clear();
     navigate("/login");
+    toast.success("Successfully logout", { position: "bottom-right" });
   }
   return (
     <>
@@ -16,11 +18,12 @@ export default function Nav() {
           </Link>
         </div>
         <div className="navbar-end">
-          <Link to="/profile" className="text-4xl font-bold px-6">
+          <Link to="/profile" className="px-6 text-red-500">
             Profile
           </Link>
-        </div>
-        <div className="navbar-end">
+          <Link to="/myHotel" className="px-6 text-red-500">
+            My Hotel
+          </Link>
           <button
             onClick={handleLogout}
             className="btn btn-ghost px-6 text-red-500"
